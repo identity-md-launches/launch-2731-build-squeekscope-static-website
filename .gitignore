@@ -1,0 +1,11 @@
+# Path budget: all dependency directories and caches: 0 bytes in submission.
+# Source, lockfile, locally bundled assets and dist/ are explicitly delivered.
+node_modules/
+**/node_modules/
+.npm/
+**/.npm/
+.vite/
+**/.vite/
+# Generated TypeScript metadata and test/scratch/ also have a 0-byte path budget.
+*.tsbuildinfo
+test/scratch/

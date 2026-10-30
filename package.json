@@ -1,0 +1,28 @@
+{
+  "name": "squeekscope",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "tsc --noEmit && vite build",
+    "typecheck": "tsc --noEmit",
+    "preview": "vite preview --host 0.0.0.0",
+    "test": "tsx --test tests/*.test.ts",
+    "test:browser": "tsx tests/browser-check.ts",
+    "test:a11y": "node tests/accessibility.mjs"
+  },
+  "dependencies": {
+    "ethers": "6.17.0",
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "axe-core": "4.14.0",
+    "tsx": "4.23.15",
+    "typescript": "7.0.2",
+    "vite": "7.3.7"
+  }
+}
